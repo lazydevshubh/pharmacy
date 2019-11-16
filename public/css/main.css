@@ -166,8 +166,9 @@ a#scrollUp i {
 }
 .help_i_wanna_die{
     color:white;
-    
-    
+}
+.please{
+    background: #032139;
 }
 .col-sm-1.clearfix{
     color :white;
@@ -1046,6 +1047,7 @@ h2.title {
 
 .category-tab ul {
     background: #fff;
+    background: #fff;
     border-bottom: 1px solid  #2989D9;
     list-style: none outside none;
     margin: 0 0 30px;
@@ -1622,8 +1624,8 @@ h2.title {
 }
 
 #cart_items .cart_info .table.table-condensed tr {
-    border-bottom: 1px solid #fff
-        
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
 #cart_items .cart_info .table.table-condensed tr:last-child {

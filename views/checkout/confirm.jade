@@ -24,7 +24,7 @@ block content
                                     -var unitPrice = product.ProductPrice;
                                     -var productTotal = product.Total;
                                     tr
-                                        //td.cart_product
+                                        td.cart_product
                                             //a(href=productLink)
                                                 img(src='/img/products/' + product.Image, alt=name)
                                         td.cart_description
@@ -32,11 +32,11 @@ block content
                                                 a(href=productLink)= name
                                             p= product.Description
                                         td.cart_price
-                                            p= unitPrice + ' €'
+                                            p= unitPrice + ' ₹'
                                         td.cart_quantity
                                             p=quantity
                                         td.cart_total
-                                            p.cart_total_price= productTotal + ' €'
+                                            p.cart_total_price= productTotal + ' ₹'
 
                 .col-sm-4
                     .table-responsive.cart_info
@@ -71,19 +71,19 @@ block content
                             tbody
                                 tr
                                     td Sub Total
-                                    td= order.SubTotal + ' €'
+                                    td= order.SubTotal + ' ₹'
                                 tr
                                     td Discount
-                                    td= order.Discount + ' €'
+                                    td= order.Discount + ' ₹'
                                 tr.shipping-cost
                                     td Shipping Cost
                                     if order.ShippingFee == 0
                                         td Free
                                     else
-                                        td= order.ShippingFee + ' €'
+                                        td= order.ShippingFee + ' ₹'
                                 tr
                                     td Total
                                     td
-                                        span= order.Total + ' €'
+                                        span= order.Total + ' ₹'
 
     // /#cart_items

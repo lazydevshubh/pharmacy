@@ -117,7 +117,7 @@ router.route('/review')
         res.render('checkout/review', contextDict);
     });
 
-router.route('/order')
+router.route('/confirm')
     .get(function (req, res, next) {
         var insertQuery = '\
             INSERT INTO Orders\
@@ -199,7 +199,7 @@ router.route('/order')
 
                         //get order info
                         var contextDict = {
-                            title: 'Order #' + rows.insertId,
+                            title: 'Order Placed ID: #' + rows.insertId,
                             customer: req.user,
                             order: order[0],
                             address: address[0],

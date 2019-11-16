@@ -6,14 +6,14 @@ block details
             h5 Order Information
                 .table-responsive.cart_info
                     table.table.table-condensed
-                        thead
+                        thead.help_i_wanna_die
                             tr.cart_menu
                                 td.image
                                 td.description Product
                                 td.price Unit Price
                                 td.quantity Quantity
                                 td.total Total
-                        tbody
+                        tbody.help_i_wanna_die
                             each product in products
                                 -var quantity = product.Quantity;
                                 -var name = product.ProductName;
@@ -29,18 +29,18 @@ block details
                                             a(href=productLink)= name
                                         p= product.Description
                                     td.cart_price
-                                        p= unitPrice + ' €'
+                                        p= unitPrice + ' ₹'
                                     td.cart_quantity
                                         p=quantity
                                     td.cart_total
-                                        p.cart_total_price= productTotal + ' €'
+                                        p.cart_total_price= productTotal + ' ₹'
         .col-sm-4
             .table-responsive.cart_info
                 table.table.table-condensed.total-result
-                    thead
+                    thead.help_i_wanna_die
                         tr.cart_menu
                             td(colspan=2) Delivery Address
-                    tbody
+                    tbody.help_i_wanna_die
                         tr
                             td Fullname
                             td= address.FullName
@@ -71,24 +71,24 @@ block details
         .col-sm-6
             .table-responsive.cart_info
             table.table.table-condensed.total-result
-                thead
+                thead.help_i_wanna_die
                     tr.cart_menu
                         td(colspan=2) Order Summary
 
-                tbody
+                tbody.help_i_wanna_die
                     tr
                         td Sub Total
-                        td= order.SubTotal + ' €'
+                        td= order.SubTotal + ' ₹'
                     tr
                         td Discount
-                        td= order.Discount + ' €'
+                        td= order.Discount + ' ₹'
                     tr.shipping-cost
                         td Shipping Cost
                         if order.ShippingFee == 0
                             td Free
                         else
-                            td= order.ShippingFee + ' €'
+                            td= order.ShippingFee + ' ₹'
                     tr
                         td Total
                         td
-                            span= order.Total + ' €'
+                            span= order.Total + ' ₹'

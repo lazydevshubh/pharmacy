@@ -31,12 +31,12 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: {lat: 60.2215, lng: 24.8078},
         map: map,
-        title: 'aStore Inc.'
+        title: 'pharmeasy Inc.'
     });
     marker.setMap(map);
 
-    var contentString = '<b>aStore Inc.</b>' +
-        '<p>aStore is a leading online retailer committed<br>' +
+    var contentString = '<b>pharmeasy Inc.</b>' +
+        '<p>pharmeasy is a leading online retailer committed<br>' +
         'to becoming the most loved and trusted marketplace<br>' +
         'on the web.</p>' +
         '<p>Address: Vanha maantie 6 - 02650 Espoo - Finland<br>' +

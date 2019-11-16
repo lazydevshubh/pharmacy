@@ -3,7 +3,7 @@ extends admin
 block details
     .table-responsive
         table.table.table-condensed
-            thead
+            thead.help_i_wanna_die
                 tr
                     td #
                     td Fullname
@@ -11,7 +11,7 @@ block details
                     td Username
                     td Admin
                     td
-            tbody
+            tbody.help_i_wanna_die
                 each customer in customers
                     tr
                         td= customer.UserID

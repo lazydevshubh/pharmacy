@@ -7,7 +7,7 @@ block details
                 each product in products
                     .row
                         .col-sm-3
-                            .product-image-wrapper
+                            //.product-image-wrapper
                                 .single-products
                                     .productinfo.text-center
                                         img(src='/img/products/' + product.Image, alt=product.ProductName)
@@ -32,7 +32,7 @@ block details
 
                             p
                                 b Price:
-                                = ' € ' + product.ProductPrice
+                                = ' ₹ ' + product.ProductPrice
 
                             - var feature = 'Yes'
                             if (product.Feature == 0)

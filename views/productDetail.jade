@@ -50,7 +50,7 @@ block content
                                     |  aStore
 
                                 span
-                                    span= '€ ' + product.ProductPrice
+                                    span= '₹ ' + product.ProductPrice
                                     form(action='/cart/' + product.ProductID + '/add', method='POST')
                                         label Quantity:
                                             input(type='text', name='quantity', value='1')
