@@ -1,5 +1,5 @@
-# eCommerce Web
-Web-shop for online shopping
+# Pharmeasy
+Web-shop for online Medicine shopping
 
 ##Features
 * Customers can list and view products
@@ -35,3 +35,4 @@ Web-shop for online shopping
 
 ##Usage
 * Execute `node bin/www.js` from project directory
+* Then open `localhost:3000`
