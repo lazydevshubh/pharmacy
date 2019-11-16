@@ -1,0 +1,26 @@
+extends info
+
+block details
+
+    h3 Orders History
+    .table-responsive
+        table.table.table-condensed
+            thead
+                tr.help_i_wanna_die
+                    td #
+                    td Date
+                    td Status
+                    td Total
+                    td
+            tbody
+                each order in orders
+                    tr.help_i_wanna_die
+                        td= order.OrderID
+                        td= order.OrderDate
+                        td= order.Status
+                        td= order.Total + ' €'
+                        td
+                            form(action='/usr/' + customer.Username + '/orders/' + order.OrderID, method='GET')
+                                button.btn.btn-default.order-btn(type='submit')
+                                    i.fa.fa-eye
+                                    = ' View'
