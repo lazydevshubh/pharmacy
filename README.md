@@ -36,5 +36,5 @@ Web-shop for online Medicine shopping
 ##Usage
 * Execute `node bin/www.js` from project directory
 * Then open `localhost:3000`
-![Screenshot of the website](https://github.com/lazydevshubh/pharmacy/Screenshot-main.png)
-![Entity Relationships](https://github.com/lazydevshubh/pharmacy/Entity_relationship.png)
+![Screenshot of the website](https://github.com/lazydevshubh/pharmacy/raw/master/Screenshot-main.png)
+![Entity Relationships](https://github.com/lazydevshubh/pharmacy/raw/master/Entity_relationship.png)
