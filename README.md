@@ -30,11 +30,11 @@ Web-shop for online Medicine shopping
     * slugify: ~0.1.1
 
 ##Installation
-* Clone project: `git clone https://github.com/anhpham1509/eCommerceWeb.git`
+* Clone project: `git clone https://github.com/lazydevshubh/pharmacy.git`
 * Install dependencies in `package.json`: `npm install`
 
 ##Usage
+* Run the pharmeasy.sql to create the database and make sure sql server is running.
 * Execute `node bin/www.js` from project directory
 * Then open `localhost:3000`
 ![Screenshot of the website](https://github.com/lazydevshubh/pharmacy/raw/master/Screenshot-main.png)
-![Entity Relationships](https://github.com/lazydevshubh/pharmacy/raw/master/Entity_relationship.png)
